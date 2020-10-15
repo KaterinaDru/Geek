@@ -76,3 +76,23 @@ town_car.show_speed()
 work_car.show_speed()
 main_car.turn('направо')
 
+
+# Задание 2
+
+
+class Road:
+    _mass = 25
+    _thickness = 1
+
+    def __init__(self, _length, _width):
+        self._length = _length
+        self._width = _width
+
+    def formula(self):
+        print(self._length * self._width * self._mass * self._thickness)
+
+
+road_1 = Road(1, 2)
+road_1.formula()
+
+
